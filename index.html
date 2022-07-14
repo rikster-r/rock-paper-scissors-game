@@ -9,35 +9,42 @@
 </head>
 <body>
     <header>
-        <h2>Rock Paper Scissors</h2>
+        <h2>Rock Paper Scissors with Computer</h2>
     </header>
     <div class="content">
         <div class="scoreboard">
             <div class="container">
-                <img id="player-hand" src="" alt="">
+                <img id="player-hand" src="images/question.png" alt="Player hand">
                 <p>Your Score: <span id="player-score">0</span></p>
             </div>
             <h1 id="round-result"></h1>
             <div class="container">
-                <img id="comp-hand" src=" " alt="">
+                <img id="comp-hand" src="images/question.png" alt="Computer hand">
                 <p>Computer Score: <span id="comp-score">0</span></p>
             </div>
         </div>
 
         <div class="choose-bar">
-            <button>
-                <div><img src="images/rock.png" alt="rock"></div>
+            <button class="hand-choose" id="rock">
+                <img src="images/rock.png" alt="rock">
             </button>
-            <button>
-                <div><img src="images/paper.png" alt="paper"></div>
+            <button class="hand-choose" id="paper">
+                <img src="images/paper.png" alt="paper">
             </button>
-            <button>
-                <div><img src="images/scissors.png" alt="scissors"></div>
+            <button class="hand-choose" id="scissors">
+                <img src="images/scissors.png" alt="scissors">
             </button>
         </div>
+
+        <dialog class="modal">
+            <p>You <span id="game-result"></span>.</p>
+            <button class="retry">Play again</button>
+        </dialog>
     </div>
     <footer>&copy 2022 rikster-r, 
         <a href="https://www.vecteezy.com/free-vector/hand-paper">Hand Paper Vectors by Vecteezy</a>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
