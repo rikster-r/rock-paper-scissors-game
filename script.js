@@ -77,7 +77,7 @@ document.querySelector('.retry').addEventListener('pointerdown', () => {
     roundText.textContent = "";
     playerHand.src = 'images/question.png';
     compHand.src = 'images/question.png';
-    playerScore = computerScore = 0;
+    playerScore.textContent = compScore.textContent = '0';
 
     modal.close();
 })
